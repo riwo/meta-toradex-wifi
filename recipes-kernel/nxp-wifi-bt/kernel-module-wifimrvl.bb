@@ -20,7 +20,7 @@ module_conf_usb8xxx_interface-diversity-usb-usb = "options usb8xxx cal_data_cfg=
 module_conf_usb8xxx_interface-diversity-usb-usb_mfg-mode = "options usb8xxx cal_data_cfg=none cfg80211_wext=0xf mfg_mode=1 fw_name=nxp/usb8997_usb_combo.bin"
 
 KERNEL_MODULE_PROBECONF_append_interface-diversity-pcie-usb = " ${KERNEL_MODULE_WIFI_INTERFACE} "
-module_conf_pcie8xxx_interface-diversity-pcie-usb = "options pcie8xxx cal_data_cfg=nxp/cal_data.conf cfg80211_wext=12"
+module_conf_pcie8xxx_interface-diversity-pcie-usb = "options pcie8xxx cal_data_cfg=nxp/cal_data.conf drv_mode=2 cfg80211_wext=12"
 module_conf_pcie8xxx_interface-diversity-pcie-usb_mfg-mode = "options pcie8xxx cal_data_cfg=none cfg80211_wext=0xf mfg_mode=1 fw_name=nxp/pcie8997_usb_combo.bin"
 
 SRC_URI = "\
